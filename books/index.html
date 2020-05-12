@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-man.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-man.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-man.png">
+  <link rel="mask-icon" href="/images/logo-man.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":"copy","show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="注：加粗是代表一定要看的，那么问题来了，这么多书啥时候看得完啊在看 Unix环境高级编程（APUE） TCP&#x2F;IP详解 卷1：协议 C++ Primer中文版 上帝掷筛子吗：量子物理神话 已看 啊哈！算法 时间简史 未来简史 看见 病毒来袭">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Books">
+<meta property="og:url" content="https:&#x2F;&#x2F;ddcoder.club&#x2F;books&#x2F;index.html">
+<meta property="og:site_name" content="Koor">
+<meta property="og:description" content="注：加粗是代表一定要看的，那么问题来了，这么多书啥时候看得完啊在看 Unix环境高级编程（APUE） TCP&#x2F;IP详解 卷1：协议 C++ Primer中文版 上帝掷筛子吗：量子物理神话 已看 啊哈！算法 时间简史 未来简史 看见 病毒来袭">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-05-12T10:51:30.823Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://ddcoder.club/books/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false,
+    isPage: true,
+    isArchive: false
+  };
+</script>
+
+  <title>Books | Koor
+  </title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Koor</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">人生苦短，不如读书</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-books">
+
+    <a href="/books/" rel="section"><i class="fa fa-fw fa-book"></i>Books</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="zh-Hans">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Books
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <hr><p>注：加粗是代表一定要看的，那么问题来了，这么多书啥时候看得完啊</p><h2 id="在看"><a href="#在看" class="headerlink" title="在看"></a>在看</h2><ul>
+<li><strong>Unix环境高级编程（APUE）</strong></li>
+<li><strong>TCP/IP详解 卷1：协议</strong></li>
+<li><strong>C++ Primer中文版</strong></li>
+<li>上帝掷筛子吗：量子物理神话</li>
+</ul><h2 id="已看"><a href="#已看" class="headerlink" title="已看"></a>已看</h2><ul>
+<li><strong>啊哈！算法</strong></li>
+<li>时间简史</li>
+<li>未来简史</li>
+<li>看见</li>
+<li>病毒来袭</li>
+</ul><a id="more"></a>
+
+
+
+<h2 id="做公司毒瘤-接下来要用团建费买的书"><a href="#做公司毒瘤-接下来要用团建费买的书" class="headerlink" title="做公司毒瘤,接下来要用团建费买的书"></a>做公司毒瘤,接下来要用团建费买的书</h2><ul>
+<li><strong>鸟哥的Linux私房菜</strong></li>
+<li><strong>TCP/IP详解 卷2：实现</strong></li>
+<li><strong>Effective C++</strong></li>
+</ul>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ul>
+<li><strong>C++ Primer中文版</strong></li>
+<li><strong>数据结构</strong></li>
+<li>编程之美：微软技术面试心得</li>
+<li><strong>Python基础教程</strong></li>
+<li>Python爬虫开发与项目实践</li>
+<li><strong>Python核心编程</strong></li>
+<li><strong>VC++深入详解</strong></li>
+<li><strong>鸟哥的Linux私房菜</strong></li>
+<li><strong>Unix环境高级编程（APUE）</strong></li>
+<li><strong>UNIX网络编程（UNP） 卷1：套接字联网API</strong></li>
+<li><strong>UNIX网络编程（UNP） 卷2：进程间通信</strong></li>
+<li><strong>TCP/IP详解 卷1：协议</strong></li>
+<li><strong>TCP/IP详解 卷2：实现</strong></li>
+<li><strong>TCP/IP详解 卷3：TCP事务协议.HTTP.NNP和UIX域协议</strong></li>
+<li><strong>深入理解计算机系统</strong></li>
+<li><strong>Effective C++</strong></li>
+<li><strong>STL源码剖析</strong></li>
+<li><strong>Linux多线程服务端编程</strong></li>
+<li><strong>C++标准程序库</strong></li>
+<li>正则表达式经典实例</li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ul>
+<li><strong>啊哈！算法</strong></li>
+<li>编程珠玑</li>
+<li>算法导论</li>
+<li>PAT</li>
+<li>Leetcode</li>
+<li>微软一百题</li>
+<li>介绍 | 编程之法：面试和算法心得</li>
+</ul>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
+<li><strong>数据库系统概论</strong></li>
+<li><strong>高性能MySQL</strong></li>
+<li>MySQL必知必会</li>
+<li>大型网站技术架构：核心原理与案例分析</li>
+</ul>
+<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><ul>
+<li>机器学习</li>
+<li>机器学习实战</li>
+<li>统计学习方法</li>
+<li>深度学习：又名“花书”</li>
+<li>TensorFlow实战</li>
+<li>TensorFlow：实战Google深度学习框架</li>
+<li>视觉解释：图像和数量，证据与线索</li>
+</ul>
+<h2 id="程序人生"><a href="#程序人生" class="headerlink" title="程序人生"></a>程序人生</h2><ul>
+<li><strong>代码整洁之道</strong></li>
+<li><strong>程序员修炼之道</strong></li>
+<li><strong>代码大全</strong></li>
+<li>程序员健康指南</li>
+<li>软技能：代码之外的生存指南</li>
+<li><strong>重构：改善既有代码设计</strong></li>
+<li><strong>GitHub入门与实践</strong></li>
+<li>大话设计模式</li>
+<li>正则指引</li>
+<li><strong>编码:隐匿在计算机软硬件背后的语言</strong></li>
+<li><strong>设计模式</strong></li>
+<li><strong>人月神话</strong></li>
+<li>点石成金 : 访客至上的网页设计秘笈</li>
+<li>快速软件开发</li>
+<li>设计心理学</li>
+<li>About Face：交互设计精髓</li>
+<li>定量信息的视觉显示</li>
+<li>Web 可用性设计</li>
+<li>想象信息</li>
+<li>美丽的证据</li>
+</ul>
+<h2 id="人文社科"><a href="#人文社科" class="headerlink" title="人文社科"></a>人文社科</h2><ul>
+<li>时间简史</li>
+<li>未来简史</li>
+<li>枪炮、病菌与钢铁：人类社会的命运</li>
+<li>浪潮之巅</li>
+<li>硅谷之谜：《浪潮之巅》续集</li>
+<li>历史深处的忧虑：近距离看美国之一</li>
+<li>你一定爱读的极简欧洲史：为什么欧洲对现代文明的影响这么深</li>
+<li>上帝掷筛子吗：量子物理神话</li>
+<li>消失的微生物：滥用抗生素引发的健康危机</li>
+<li>理性选民的神话：为什么民主制度选择不良政策</li>
+<li>小狗钱钱：引导孩子正确认识财富、创造财富的金钱“童话”</li>
+<li>趣味生活简史</li>
+<li>如何阅读一本书</li>
+<li>西厢记</li>
+<li>红与黑</li>
+<li>唐诗宋词里的趣事</li>
+<li>看见</li>
+<li>傅雷家书</li>
+<li>有闲阶级论：关于制度的经济研究</li>
+<li>你会杀死那个胖子吗：一个关于对与错的哲学谜题</li>
+<li>血疫：埃博拉的故事</li>
+<li>宇宙的琴弦</li>
+<li>雅舍贪吃</li>
+<li>浮生六记</li>
+<li>1493：物种大交换开创的世界史</li>
+<li>从一到无穷大：科学中的事实与臆测</li>
+<li>众病之王：癌症传</li>
+<li>世界观：科学史与科学哲学导论</li>
+<li>大国大城：当代中国的统一、发展与平衡</li>
+<li>人性的弱点</li>
+<li>总统是靠不住的：近距离看美国之二</li>
+<li>人类简史：从动物到上帝</li>
+<li>菊与刀：日本文化的类型</li>
+<li>我也有一个梦想：近距离看美国之三</li>
+<li>富爸爸穷爸爸</li>
+<li>基督山伯爵</li>
+<li>进化心理学：心理的新科学</li>
+<li>如彗星划过夜空：近距离看美国之四</li>
+<li>乌合之众：大众心理研究</li>
+<li>智能时代：大数据与智能革命重新定义未来</li>
+<li>时间的形状：相对论史话</li>
+</ul>
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在看"><span class="nav-number">1.</span> <span class="nav-text">在看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#已看"><span class="nav-number">2.</span> <span class="nav-text">已看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做公司毒瘤-接下来要用团建费买的书"><span class="nav-number">3.</span> <span class="nav-text">做公司毒瘤,接下来要用团建费买的书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-number">4.</span> <span class="nav-text">基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">5.</span> <span class="nav-text">算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库"><span class="nav-number">6.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度学习"><span class="nav-number">7.</span> <span class="nav-text">深度学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序人生"><span class="nav-number">8.</span> <span class="nav-text">程序人生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人文社科"><span class="nav-number">9.</span> <span class="nav-text">人文社科</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Koordinaten"
+    src="/images/Avatar1.JPG">
+  <p class="site-author-name" itemprop="name">Koordinaten</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-book"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Koordinaten</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">23k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">43 分钟</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+  <script>
+  function leancloudSelector(url) {
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = visitors.getAttribute('id').trim();
+      var title = visitors.getAttribute('data-flag-title').trim();
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+              .catch(error => {
+                console.log('Failed to save visitor count', error);
+              })
+          } else {
+              Counter('post', '/classes/Counter', { title: title, url: url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.log('Failed to create', error);
+                });
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return element.getAttribute('id').trim();
+      });
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length === 0) {
+            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
+              element.innerText = 0;
+            });
+            return;
+          }
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            leancloudSelector(url).innerText = time;
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = leancloudSelector(url);
+            if (element.innerText == '') {
+              element.innerText = 0;
+            }
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=ofuMGtPKja2Qt9wuam2PbR64-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method: method,
+          headers: {
+            'X-LC-Id': 'ofuMGtPKja2Qt9wuam2PbR64-gzGzoHsz',
+            'X-LC-Key': 'R5ksCqNYlRjlhRk6X9CJ3NdL',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
+        if (localhost.test(document.URL)) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
